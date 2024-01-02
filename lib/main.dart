@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:tyamo/View/Auth/features/BatteryInfo/battery_info.dart';
 import 'package:tyamo/View/Auth/features/UserStatus/user_status.dart';
+import 'package:tyamo/View/Auth/features/album/album_main.dart';
 import 'package:tyamo/View/Auth/features/deviceinfo/device_info.dart';
 import 'package:tyamo/View/Auth/features/generalinfo/general_info.dart';
 import 'package:tyamo/View/Auth/forgot_passowrd.dart';
@@ -13,6 +14,7 @@ import 'package:tyamo/View/invitation/invite_friend.dart';
 import 'package:tyamo/View/profile/profile_settings.dart';
 import 'package:tyamo/View/profile/profile_setup.dart';
 
+import 'View/Auth/features/DeviceSpecs/device_specs.dart';
 import 'View/Auth/features/locationinfo/location_info.dart';
 
 void main() {
@@ -28,7 +30,7 @@ class Tyamo extends StatelessWidget {
     return ResponsiveSizer(builder: (context, orientation, screenType) {
       return MaterialApp(
         title: "Tyamo",
-        home: LocationInfo(),
+        home: AlbumMain(),
       );
     });
   }
